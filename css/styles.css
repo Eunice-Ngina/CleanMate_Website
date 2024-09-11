@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+	font-family: "Arial", sans-serif;
+	color: #2c3e50; /* Dark text color for readability */
+	background-color: #ecf6fd; /* Light blue background */
+	margin: 0;
+	padding: 0;
+}
+
+/* Navbar */
+.navbar {
+	background-color: #e46935; /* Calming blue background */
+}
+
+.navbar-brand,
+.nav-link {
+	color: rgb(92, 91, 91) !important;
+	
+	text-transform: uppercase;
+}
+
+.nav-link:hover {
+	color: #db6c34 !important; /* Soft yellow hover effect */
+}
+
+.nav-link.btn {
+	background-color: #f1c40f; /* Soft yellow button */
+	padding: 5px 15px;
+	border-radius: 20px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.nav-link.btn:hover {
+	background-color: #e67e22; /* Warm coral hover */
+}
+
+/* Hero Section */
+.hero-section {
+	background-color: #f04c10; /* Calming blue background */
+	color: white;
+	padding: 80px 0;
+}
+
+.hero-section h1 {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.hero-section p {
+	font-size: 18px;
+	color: #ecf0f1; /* Softer text color */
+}
+
+.hero-section .btn-primary {
+	background-color: #f1c40f; /* Soft yellow button */
+	border-color: #f1c40f;
+	color: white;
+}
+
+.hero-section .btn-primary:hover {
+	background-color: #e67e22;
+}
+
+.hero-section .btn-secondary {
+	background-color: #e74c3c; /* Warm coral button */
+	border-color: #e74c3c;
+	color: white;
+}
+
+.hero-section .btn-secondary:hover {
+	background-color: #c0392b;
+}
+
+/* Hero Image */
+.hero-image {
+	max-width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Section */
+.services-section {
+	background-color: #ecf6fd;
+	padding: 60px 0;
+}
+
+.services-section h2 {
+	color: #db6c34; /* Calming blue */
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.card-title {
+	color: #2c3e50;
+}
+
+.card-text {
+	color: #7f8c8d; /* Gray text for description */
+}
+
+/* Steps Section */
+.steps-section {
+	background-color: #ffffff;
+	padding: 60px 0;
+}
+
+.steps-section h2 {
+	color: #db6c34;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.steps-section p {
+	color: #34495e; /* Dark blue */
+	font-size: 16px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+	background-color: #f9f9f9;
+	padding: 60px 0;
+}
+
+.testimonials-section h2 {
+	color: #db6c34;
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.testimonials-section h5 {
+	color: #2c3e50;
+}
+
+.testimonials-section p {
+	color: #7f8c8d;
+}
+
+/* Footer */
+.footer {
+	background-color: #34495e;
+	color: white;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.footer p {
+	margin: 0;
+	color: #bdc3c7;
+}
+
+/* Button Overrides */
+.btn-primary {
+	background-color: #f1c40f;
+	border-color: #f1c40f;
+}
+
+.btn-primary:hover {
+	background-color: #e67e22;
+	border-color: #e67e22;
+}
+
+.btn-secondary {
+	background-color: #e74c3c;
+	border-color: #e74c3c;
+}
+
+.btn-secondary:hover {
+	background-color: #c0392b;
+	border-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+	.hero-section .col-md-6 {
+		margin-bottom: 20px;
+	}
+
+	.services-section,
+	.steps-section,
+	.testimonials-section {
+		text-align: center;
+	}
+
+	.hero-image {
+		margin-top: 20px;
+	}
+}
