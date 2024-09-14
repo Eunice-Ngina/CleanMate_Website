@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
+	// play and Pause Hero section video
+
+	
+
 	// Back to Top Button Logic
 	const backToTopButton = document.createElement("button");
 	backToTopButton.innerText = "↑ Top";

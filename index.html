@@ -14,7 +14,7 @@
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container">
-				<a class="navbar-brand" href="#">CleanMate</a>
+				<a class="navbar-brand ms-0" href="#">CleanMate</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -24,7 +24,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav ms-auto">
+					<ul class="navbar-nav mx-auto">
 						<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
@@ -37,26 +37,72 @@
 				</div>
 			</div>
 		</nav>
+
 		<section class="hero-section py-5">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-6 text-center text-md-left">
-						<h1>We Care About Your Clothes</h1>
+						<h1>Feel Fresh Feel Comfy</h1>
 						<p>
 							Your clothes deserve the best care. CleanMate offers fast,
 							reliable, and affordable dry cleaning services.
 						</p>
 						<div class="mt-4">
 							<a href="#" class="btn btn-primary">Book Now</a>
-							<a href="#" class="btn btn-secondary">Watch Video</a>
+							<button
+								id="playPause"
+								href="#"
+								class="btn btn-secondary"
+								onclick="playPauseVideo()"
+							>
+								Watch Video
+							</button>
 						</div>
 					</div>
+
 					<div class="col-md-6 text-center text-md-left">
-						<img
-							src="https://images.unsplash.com/photo-1696546760788-a409fad79ffb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRyeSUyMGNsZWFuaW5nfGVufDB8fDB8fHww"
-							alt="Dry Cleaning Service"
-							class="img-fluid hero-image"
-						/>
+						<video
+							id="cleaningVideo"
+							src="https://videos.pexels.com/video-files/8756884/8756884-uhd_2732_1440_25fps.mp4"
+							class="video-fluid hero-video"
+							controls
+							autoplay
+							muted
+							loop
+							style="
+								max-width: 100%;
+								height: auto;
+								border-radius: 8px;
+								box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+							"
+						></video>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Statistics Section -->
+		<section class="statistics-section py-5 bg-dark text-white">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-3">
+						<h3>95%</h3>
+						<hr class="bg-white" />
+						<p>Customer Satisfaction</p>
+					</div>
+					<div class="col-md-3">
+						<h3>1,500+</h3>
+						<hr class="bg-white" />
+						<p>Happy Customers</p>
+					</div>
+					<div class="col-md-3">
+						<h3>3,000+</h3>
+						<hr class="bg-white" />
+						<p>Garments Cleaned</p>
+					</div>
+					<div class="col-md-3">
+						<h3>100%</h3>
+						<hr class="bg-white" />
+						<p>Quality Guarantee</p>
 					</div>
 				</div>
 			</div>
@@ -222,6 +268,18 @@
 		</footer>
 
 		<!-- Bootstrap JS -->
+		<script>
+			const video = document.getElementById("cleaningVideo");
+			const btn = document.getElementById("playPause");
+
+			function playPauseVideo() {
+				if (video.paused) {
+					video.play();
+				} else {
+					video.pause();
+				}
+			}
+		</script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="script.js"></script>
 	</body>
